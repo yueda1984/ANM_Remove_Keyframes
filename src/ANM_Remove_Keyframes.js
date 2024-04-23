@@ -1,3 +1,36 @@
+/*
+	Remove Keyframes
+
+	A Toon Boom Harmony shelf script. This function removes all transformation keyframes on injected node by deleting each animated attribute's linked column.
+	Suppprted nodes are Peg, Drawing, Free Form Deformer, Offset, Curve and Bone.
+	Tested on Harmony 17.
+
+
+	Installation:
+	
+	1) Download and Unarchive the zip file.
+	2) Locate to your user scripts folder (a hidden folder):
+	   https://docs.toonboom.com/help/harmony-17/premium/scripting/import-script.html
+	   
+	3) There is a folder named "src" inside the zip file. Copy all its contents directly to the folder above.
+	4) In Harmony, add ANM_Remove_Keyframes function to any toolbar.
+
+	
+	Direction:
+	
+	Select the node(s) to remove keyframes from then run the function.
+
+	
+	Author:
+
+		Yu Ueda		
+		Many more useful scripts for Toon Boom Harmony are available. Please visit raindropmoment.com	
+*/
+
+
+var scriptVer = "1.00";
+
+
 function ANM_Remove_Keyframes()
 {	
 	this.getCompleteNodeList = function(nodeList)
